@@ -12,16 +12,36 @@ class GrowCard extends React.Component {
   }
 
   _handleStarClick() {
-    let card = Object.assign(this.props.cardData, {
-      star: !this.props.cardData.star
+    let card = Object.assign({}, {
+      articleAuthor: this.props.articleAuthor,
+      authorAvatar: this.props.articleAuthorAvatar,
+      createDate: this.props.articleCreateDate,
+      articleTitle: this.props.articleTitle,
+      articleContent: this.props.articleContent,
+      articleTags: this.props.articleTags,
+      articleReadCount: this.props.articleReadCount,
+      articleCategory: this.props.articleCategory,
+      like: this.props.like,
+      star: !this.props.star,
+      id: this.props.id
     });
 
     this.props.handleStarClick(card);
   }
 
   _handleLikeClicked() {
-    let card = Object.assign(this.props.cardData, {
-      like: !this.props.cardData.like
+    let card = Object.assign({}, {
+      articleAuthor: this.props.articleAuthor,
+      authorAvatar: this.props.articleAuthorAvatar,
+      createDate: this.props.articleCreateDate,
+      articleTitle: this.props.articleTitle,
+      articleContent: this.props.articleContent,
+      articleTags: this.props.articleTags,
+      articleReadCount: this.props.articleReadCount,
+      articleCategory: this.props.articleCategory,
+      like: !this.props.like,
+      star: this.props.star,
+      id: this.props.id
     });
 
     this.props.handleLikeClick(card);
@@ -51,7 +71,7 @@ class GrowCard extends React.Component {
               <div className="autofit-section text-secondary">
                 <span className="grow-author">{this.props.articleAuthor}</span>
                 <p className="grow-create-date">
-                  {this.props.articleCreateDate}
+                  {this.props.articleCreateDate ? this.props.articleCreateDate : ""}
                 </p>
               </div>
             </div>
@@ -121,18 +141,20 @@ class GrowCard extends React.Component {
                     <TextTruncate
                       line={2}
                       truncateText="…"
-                      text={this.props.articleTitle}
+                      text={this.props.articleTitle ? this.props.articleTitle : ""}
                     />
                   </h3>
                 </a>
               </div>
               <div className="autofit-section">
                 <div className="text-secondary grow-card-content">
+                  {this.props.articleContent ? (
                   <TextTruncate
                     line={3}
                     truncateText="…"
-                    text={this.props.articleContent}
-                  />
+                    text={this.props.articleContent.replace(/(<([^>]+)>)/ig,"")}
+                  />) :
+                  ""}
                 </div>
               </div>
             </div>

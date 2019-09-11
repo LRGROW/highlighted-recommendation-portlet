@@ -1,109 +1,120 @@
-.lexicon-icon-star-o,
-.lexicon-icon-star {
-	fill: #ffdf00 !important;
-}
-
-.thumbs-up {
-	fill: #3b5998 !important;
-}
-
-.thumbs-up-liked {
-	fill: #8b9dc3 !important;
-}
-
-.label-remaining-tags {
-	border-style: none;
-}
-
-.grow-card {
-	border-bottom: 0.6rem solid #fff;
-	
-	.grow-card-title {
-		min-height: 3.5rem;
+.highlighted-recommendation-portlet {
+	.lexicon-icon-star-o,
+	.lexicon-icon-star {
+		fill: #FDCC4A !important;
 	}
-	.grow-card-cont {
-		font-size: 14px;
-		min-height: 5.25rem;
+
+	.thumbs-up {
+		fill: #B3CDFF !important;
 	}
-	.grow-card-footer {
-		min-height: 6rem;
+
+	.thumbs-up-liked {
+		fill: #0B5FFF !important;
 	}
-	.grow-card-tag {
-		min-height: 3.5rem;
+
+	.grow-card {
+		border-bottom: 0.6rem solid #fff;
+
+		.grow-card-content {
+			font-size: 14px;
+		}
+
+		.btn {
+			padding: 0.4375rem 0.4375rem;
+		}
+
+		a {
+			color: #09101D;
+		}
 	}
-	.btn {
-		padding: 0.4375rem 0.4375rem;
+
+	.grow-card .card-body {
+		padding: 1rem 1rem 0.65rem 1rem;
+
+		.grow-author {
+			font-style: normal;
+			font-weight: bold;
+			font-size: 14px;
+		}
+
+		.grow-create-date {
+			font-size: 14px;
+		}
+
+		.grow-card-article {
+			height: 165px;
+			max-height: 165px;
+		}
+
+		.grow-title {
+			font-size: 18px;
+			font-weight: 500;
+		}
+
+		.autofit-padded>.autofit-col {
+			padding-bottom: 0px;
+		}
+
+		.label {
+			line-height: 13px;
+		}
+
+		.label-remaining-tags {
+			border-style: none;
+		}
+
 	}
-	a {
-		color: #09101D;
-		text-decoration: none;
+
+	.grow-card {
+		box-shadow: 0 0 0 0;
+		box-shadow: 0 1px 10px -4px rgba(0, 0, 0, 0.6);
 	}
-}
 
-.grow-card .card-body {
-	padding: 1rem 1rem 0.65rem 1rem;
-
-	h3 {
-		font-size: 1.125rem;
+	.card-excellence {
+		border-color: #E55E75;
 	}
-}
 
-.grow-card {
-	box-shadow: 0 0 0 0;
+	.card-excellence * .excellence-footer-active {
+		color: #E55E75;
+	}
 
-	@media only screen and (max-width: 756px) {
-        box-shadow: 0 1px 10px -4px rgba(0, 0, 0, 0.6);
-    }
-}
+	.card-learn {
+		border-color: #503690;
+	}
 
-.grow-card:hover {
-	box-shadow: 0 1px 10px -4px rgba(0, 0, 0, 0.6);
-}
+	.card-learn * .learn-footer-active {
+		color: #503690;
+	}
 
-.card-excellence:hover {
-	border-color: #E55E75;
-}
+	.card-people {
+		border-color: #47C6F5;
+	}
 
-.card-excellence:hover * .excellence-footer-active {
-	color: #E55E75;
-}
+	.card-people * .people-footer-active {
+		color: #47C6F5;
+	}
 
-.card-learn:hover {
-	border-color: #503690;
-}
+	.card-share {
+		border-color: #42BFC2;
+	}
 
-.card-learn:hover * .learn-footer-active {
-	color: #503690;
-}
+	.card-share * .share-footer-active {
+		color: #42BFC2;
+	}
 
-.card-people:hover {
-	border-color: #47C6F5;
-}
+	.excellence-footer-inactive {
+		color: #ef9eac;
+	}
 
-.card-people:hover * .people-footer-active {
-	color: #47C6F5;
-}
+	.learn-footer-inactive {
+		color: #9686bc;
+	}
 
-.card-share:hover {
-	border-color: #42BFC2;
-}
+	.people-footer-inactive {
+		color: #90dcf9;
+	}
 
-.card-share:hover * .share-footer-active {
-	color: #42BFC2;
-}
-
-.excellence-footer-inactive {
-	color: #ef9eac;
-}
-
-.learn-footer-inactive {
-	color: #9686bc;
-}
-
-.people-footer-inactive {
-	color: #90dcf9;
-}
-
-.share-footer-inactive {
-	color: #8dd8da;
+	.share-footer-inactive {
+		color: #8dd8da;
+	}
 }
