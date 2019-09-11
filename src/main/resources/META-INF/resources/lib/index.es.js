@@ -370,6 +370,6 @@ class App extends React.Component {
 	}
 }
 
-export default function(elementId) {
-	ReactDOM.render(<App />, document.getElementById(elementId));
+export default function(elementId, articleToRecommend) {
+	ReactDOM.render(<App articleToRecommend={articleToRecommend} />, document.getElementById(elementId));
 }
